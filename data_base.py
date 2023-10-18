@@ -12,12 +12,12 @@ def prepare_text(text):
 
 class DataBase:
 	def __init__(self, summary=False, max_size=-1):
-		readed_text = open('data/data_text.txt', 'r', encoding='utf-8').read()
+		readed_text = open('data/whole_data_text.txt', 'r', encoding='utf-8').read()
 		self.whole_text = readed_text
 		if max_size != -1: self.whole_text = self.whole_text[:max_size]
 		self.text_size = len(self.whole_text)
 
-		self.alphabet = list(open('data/alphabet.txt', 'r', encoding='utf-8').read())
+		self.alphabet = list(open('data/whole_alphabet.txt', 'r', encoding='utf-8').read())
 		self.alphabet.sort()
 		self.alph_len = len(self.alphabet)
 		self.letter_index = {self.alphabet[i]: i for i in range(self.alph_len)}
