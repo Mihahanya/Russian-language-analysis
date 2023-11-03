@@ -2,7 +2,7 @@ from os import walk
 from data_base import *
 
 # Dataset - https://www.kaggle.com/datasets/d0rj3228/russian-literature
-DATA_PATH = 'd:/Downloads/Russian texts database/'
+DATA_PATH = 'E:/databases/Russian texts database/'
 
 data_text = ''
 for dirpath, dirnames, filenames in walk(DATA_PATH):
